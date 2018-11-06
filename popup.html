@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guplab Launcher</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <!-- Inner CSS -->
+    <style media="screen">
+        html { font:500 14px/150% "Open Sans", sans-serif; }
+
+        body { margin:0; padding:0; }
+
+        h1 { padding:0;margin:0; }
+        
+        * {
+            box-sizing:border-box;
+        }
+
+        .launcher-app {
+            width:360px;
+            height:auto;
+            display:inline-block;
+        }
+
+        .launcher-app .launcher-header {
+            width:100%;
+            height:auto;
+            padding:10px 16px;
+        }
+
+        .launcher-app .launcher-header .logo {
+            width:100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .launcher-app .launcher-header .logo img {
+            margin-right: 16px;
+        }
+
+        .launcher-app .launcher-header .logo span.version_ {
+            font-size:1rem;
+        }
+
+        .launcher-app .launcher-content {
+            width:100%;
+            height:auto;
+            padding:0 16px;
+        }
+
+        .launcher-app  .launcher-icons {
+            width:100%;
+            height:auto;
+            display:inline-table;
+        }
+
+        .launcher-app .launcher-icons .flexible-content {
+            width:100%;
+            height:auto;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            padding:10px 16px;
+        }
+
+        .launcher-app .launcher-icons .flexible-content .flex-item {
+            font-size:22px;
+        }
+
+        .launcher-app .launcher-icons .flexible-content .flex-item a {
+            color:#333;
+            text-shadow: 0 2px 1px rgba(0,0,0,0.2)
+        }
+
+        .launcher-subsciption-box {
+            width:100%;
+            padding:0 16px;
+            padding-bottom:16px;
+        }
+
+        .launcher-subsciption-box button {
+            width:100%;
+            height:56px;
+            font-weight:600;
+            border:none;
+            outline:none;
+            cursor:pointer;
+            box-shadow: 0 3px 4px rgba(0,0,0,0.4);
+            transition:all .2s ease-in-out;
+        }
+
+        .launcher-subsciption-box button:hover {
+            box-shadow: 0 6px 8px rgba(0,0,0,0.25);
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal de aplicacion -->
+    <div class="launcher-app">
+        <!-- Cabecera de aplicacion -->
+        <div class="launcher-header">
+            <!-- Logo de aplicacion -->
+            <h1 class="logo">
+                <img src="images/guplab-logo.png" width="50px" alt="">
+                <span>Guplab Launcher <span class="version_">0.0.1</span></span>
+            </h1>
+        </div>
+        <!-- Contenido -->
+        <div class="launcher-content">
+            <p>Accesa rapido y facil al contenido de Guplab.</p>
+        </div>
+        <!-- Iconos de acceso de aplicacion -->
+        <div class="launcher-icons">
+            <div class="flexible-content">
+                <!--
+                    @espacio para enlaces directos del lanzador
+                -->
+                <!-- Website -->
+                <div class="flex-item">
+                    <a href="https://www.guplab.com" title="Website" target="_blank">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                </div>
+                <!-- YouTube -->
+                <div class="flex-item">
+                    <a href="https://www.youtube.com/channel/UCibbyqeL39SV6MxcQCYe0_Q/featured" title="YouTube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <!-- Patreon -->
+                <div class="flex-item">
+                    <a href="https://www.patreon.com/guplab" title="Patreon" target="_blank">
+                        <i class="fab fa-patreon"></i>
+                    </a>
+                </div>
+                <!-- Twitter -->
+                <div class="flex-item">
+                    <a href="https://twitter.com/Guplab_" title="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <!-- Facebook -->
+                <div class="flex-item">
+                    <a href="https://www.facebook.com/Guplabs-747030442299674/?view_public_for=747030442299674" title="Facebook" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <!-- Github -->
+                <div class="flex-item">
+                    <a href="https://github.com/guplab" title="Github" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="launcher-subsciption-box">
+                <p>Subscribete para mas informacion</p>
+                <button>Subscribirme</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup.js -->
+    <script type="text/javascript" src="popup.js"></script>
+
+</body>
+</html>
